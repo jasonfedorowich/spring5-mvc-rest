@@ -10,4 +10,10 @@ public interface CustomerService {
 
     List<CustomerDTO> getCustomers();
     CustomerDTO getCustomerByName(String name);
+
+    CustomerDTO createCustomer(CustomerDTO customerDTO);
+    CustomerDTO saveCustomerByDTO(Long id, CustomerDTO customerDTO);
+    CustomerDTO patchCustomer(Long id, CustomerDTO customerDTO);
+
+    void deleteCustomer(Long id);
 }
